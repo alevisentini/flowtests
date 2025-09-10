@@ -1,0 +1,101 @@
+{
+  "version": "chrome-recorder-flow@1",
+  "flow": {
+    "commands": [
+      {
+        "description": "Navigate to Google",
+        "id": "cmd_1757450947455_1_u8je5il8j",
+        "timestamp": 1757450947456,
+        "type": "navigate",
+        "value": "https://www.google.com/ncr"
+      },
+      {
+        "description": "Wait for search box",
+        "id": "cmd_1757450947456_2_7a0wp5pxy",
+        "target": {
+          "alternatives": {
+            "css": "#APjFqb",
+            "name": "q",
+            "xpath": "//textarea[@name=\"q\"]"
+          },
+          "primary": "textarea[name=\"q\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "waitForElement",
+        "value": "10000"
+      },
+      {
+        "description": "Type search query",
+        "id": "cmd_1757450947456_3_3zjalrufj",
+        "target": {
+          "alternatives": {
+            "css": "#APjFqb",
+            "name": "q"
+          },
+          "primary": "textarea[name=\"q\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{searchQuery}}"
+      },
+      {
+        "description": "Submit search",
+        "id": "cmd_1757450947456_4_wr1k73bwa",
+        "target": {
+          "alternatives": {
+            "css": "#APjFqb",
+            "name": "q",
+            "xpath": "//textarea[@name=\"q\"]"
+          },
+          "primary": "textarea[name=\"q\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "keyPress",
+        "value": "Enter"
+      },
+      {
+        "description": "Wait for search results",
+        "id": "cmd_1757450947456_5_c0qzosxow",
+        "target": {
+          "alternatives": {
+            "id": "search",
+            "xpath": "//div[@id=\"search\"]"
+          },
+          "primary": "#search",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "waitForElement",
+        "value": "10000"
+      },
+      {
+        "description": "Verify search results",
+        "id": "cmd_1757450947456_6_ol34rsdet",
+        "target": {
+          "alternatives": {},
+          "primary": "#result-stats",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "assert",
+        "value": "textContains:{{expectedResults}}"
+      }
+    ],
+    "description": "Example flow showing how to search on Google (uses global variables)",
+    "deviceType": "desktop",
+    "id": "chrome_example_1757450947455",
+    "metadata": {
+      "createdAt": "2025-09-09T20:49:07.456Z",
+      "duration": 0,
+      "recommendedOptions": {
+        "smartWaits": true
+      },
+      "updatedAt": "2025-09-09T20:49:07.456Z"
+    },
+    "name": "📚 Tutorial: Google Search",
+    "project": "Examples"
+  }
+}

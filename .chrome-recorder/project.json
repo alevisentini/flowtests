@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "projectId": "proj_1757536783840_dgkyw0j4x",
+  "formats": {
+    "flow": "chrome-recorder-flow@1",
+    "suite": "chrome-recorder-suite@1",
+    "env": "chrome-recorder-env@1"
+  }
+}

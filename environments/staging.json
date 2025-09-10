@@ -1,0 +1,12 @@
+{
+  "version": "chrome-recorder-env@1",
+  "environment": {
+    "name": "staging",
+    "variables": {
+      "API_URL": "https://api-staging.example.com",
+      "BASE_URL": "https://staging.example.com",
+      "DEBUG": false,
+      "LOG_LEVEL": "info"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": "chrome-recorder-env@1",
+  "environment": {
+    "name": "production",
+    "variables": {
+      "API_URL": "https://api.example.com",
+      "BASE_URL": "https://example.com",
+      "DEBUG": false,
+      "LOG_LEVEL": "error"
+    }
+  }
+}

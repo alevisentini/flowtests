@@ -1,0 +1,111 @@
+{
+  "version": "chrome-recorder-flow@1",
+  "flow": {
+    "commands": [
+      {
+        "description": "Wait for account button to be visible",
+        "id": "cmd_1757450947456_35_ao2x5svvl",
+        "target": {
+          "alternatives": {
+            "css": ".secondary-links li:first-child a",
+            "xpath": "//ul[contains(@class, \"secondary-links\")]/li[1]/a"
+          },
+          "primary": "#scanMeHeader > section.scanMeBanner > div > div > nav > ul.navigation-header-links.secondary-links > li:nth-child(1) > a",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "waitForElement",
+        "value": "3000"
+      },
+      {
+        "description": "Click account menu button",
+        "id": "cmd_1757450947456_36_4ydx38fnx",
+        "target": {
+          "alternatives": {
+            "css": ".secondary-links li:first-child a",
+            "text": "My account",
+            "xpath": "//ul[contains(@class, \"secondary-links\")]/li[1]/a"
+          },
+          "primary": "#scanMeHeader > section.scanMeBanner > div > div > nav > ul.navigation-header-links.secondary-links > li:nth-child(1) > a",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "click",
+        "value": ""
+      },
+      {
+        "description": "Wait for dropdown menu to open",
+        "id": "cmd_1757450947456_37_sbw0q6zg4",
+        "target": {
+          "alternatives": {},
+          "primary": "",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "wait",
+        "value": "1000"
+      },
+      {
+        "description": "Wait for logout button to appear in dropdown",
+        "id": "cmd_1757450947456_38_5f2t3zwvu",
+        "target": {
+          "alternatives": {
+            "css": ".secondary-links > li:nth-child(1) > ul > li:nth-child(1) > a",
+            "text": "Log out",
+            "xpath": "//ul[contains(@class, \"secondary-links\")]/li[1]/ul/li[1]/a"
+          },
+          "primary": "#scanMeHeader > section.scanMeBanner > div > div > nav > ul.navigation-header-links.secondary-links > li:nth-child(1) > ul > li:nth-child(1) > a",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "waitForElement",
+        "value": "3000"
+      },
+      {
+        "description": "Click the logout button",
+        "id": "cmd_1757450947456_39_zjj3qosh6",
+        "target": {
+          "alternatives": {
+            "css": ".secondary-links > li:nth-child(1) > ul > li:nth-child(1) > a",
+            "text": "Log out",
+            "xpath": "//ul[contains(@class, \"secondary-links\")]/li[1]/ul/li[1]/a"
+          },
+          "primary": "#scanMeHeader > section.scanMeBanner > div > div > nav > ul.navigation-header-links.secondary-links > li:nth-child(1) > ul > li:nth-child(1) > a",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "click",
+        "value": ""
+      },
+      {
+        "description": "Verify my-account link exists (confirms logout)",
+        "id": "cmd_1757450947456_40_rdwkcdoth",
+        "target": {
+          "alternatives": {
+            "css": ".secondary-links a[href=\"/my-account\"]",
+            "xpath": "//a[@href=\"/my-account\"][contains(text(), \"Log in\")]"
+          },
+          "primary": "a[href=\"/my-account\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "assert",
+        "value": "exists"
+      }
+    ],
+    "description": "Logout flow using the actual account menu",
+    "deviceType": "desktop",
+    "id": "gin_juice_logout_1757450947459",
+    "metadata": {
+      "createdAt": "2025-09-09T20:49:07.456Z",
+      "duration": 0,
+      "recommendedOptions": {
+        "smartWaits": true
+      },
+      "updatedAt": "2025-09-09T20:49:07.456Z"
+    },
+    "name": "Gin & Juice - Logout",
+    "project": "Examples",
+    "testDataFileId": "gin_juice_test_data"
+  }
+}

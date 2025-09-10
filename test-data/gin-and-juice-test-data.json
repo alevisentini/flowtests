@@ -1,0 +1,48 @@
+{
+  "createdAt": "2025-09-09T20:49:07.455Z",
+  "data": [
+    {
+      "address": "123 Main Street",
+      "cardNumber": "4111111111111111",
+      "city": "San Francisco",
+      "cvv": "123",
+      "email": "john.smith@example.com",
+      "expiryDate": "12/25",
+      "firstName": "John",
+      "lastName": "Smith",
+      "password": "hunter2",
+      "phoneNumber": "415-555-0100",
+      "searchTerm": "gin",
+      "state": "CA",
+      "username": "carlos",
+      "zipCode": "94102"
+    }
+  ],
+  "description": "Example test data for Gin and Juice demo site flows",
+  "format": "json",
+  "headers": [
+    "username",
+    "password",
+    "searchTerm",
+    "firstName",
+    "lastName",
+    "email",
+    "address",
+    "city",
+    "state",
+    "zipCode",
+    "phoneNumber",
+    "cardNumber",
+    "expiryDate",
+    "cvv"
+  ],
+  "id": "gin_juice_test_data",
+  "name": "Gin and Juice - Test Data",
+  "updatedAt": "2025-09-09T20:49:07.457Z",
+  "usedByFlows": [
+    "gin_juice_login_1757450947456",
+    "gin_juice_browse_1757450947457",
+    "gin_juice_checkout_1757450947458",
+    "gin_juice_logout_1757450947459"
+  ]
+}

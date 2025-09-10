@@ -1,0 +1,248 @@
+{
+  "version": "chrome-recorder-flow@1",
+  "flow": {
+    "commands": [
+      {
+        "description": "Navigate to shopping cart",
+        "id": "cmd_1757450947456_17_1tj2musb4",
+        "metadata": {
+          "manual": true
+        },
+        "target": {
+          "alternatives": {},
+          "primary": "{\"selector\":\"a.cart-icon.selected\",\"intent\":\"click\"}",
+          "strategy": "css"
+        },
+        "timestamp": 1757502378568,
+        "type": "click",
+        "value": "https://ginandjuice.shop/cart"
+      },
+      {
+        "description": "Wait for cart to load",
+        "id": "cmd_1757450947456_18_7rpuumg24",
+        "metadata": {
+          "manual": true
+        },
+        "target": {
+          "alternatives": {},
+          "primary": "{\"selector\":\".cart-wrapper\",\"intent\":\"click\"}",
+          "strategy": "css"
+        },
+        "timestamp": 1757505083156,
+        "type": "click",
+        "value": "2000"
+      },
+      {
+        "description": "Proceed to checkout",
+        "id": "cmd_1757450947456_19_gbvwlbhpi",
+        "metadata": {
+          "manual": true
+        },
+        "target": {
+          "alternatives": {},
+          "primary": "{\"selector\":\"form.login-form:nth-of-type(2) button.button\",\"intent\":\"click\"}",
+          "strategy": "css"
+        },
+        "timestamp": 1757509901280,
+        "type": "click"
+      },
+      {
+        "description": "Wait for checkout form",
+        "id": "cmd_1757450947456_20_svcwrrbv2",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"firstName\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "waitForElement",
+        "value": "2000"
+      },
+      {
+        "description": "Enter first name",
+        "id": "cmd_1757450947456_21_n6q25uuue",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"firstName\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{firstName}}"
+      },
+      {
+        "description": "Enter last name",
+        "id": "cmd_1757450947456_22_5eh74w6ij",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"lastName\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{lastName}}"
+      },
+      {
+        "description": "Enter email",
+        "id": "cmd_1757450947456_23_4oif8vadq",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"email\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{email}}"
+      },
+      {
+        "description": "Enter address",
+        "id": "cmd_1757450947456_24_hmtatk2bf",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"address\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{address}}"
+      },
+      {
+        "description": "Enter city",
+        "id": "cmd_1757450947456_25_jr50gdws9",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"city\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{city}}"
+      },
+      {
+        "description": "Select state",
+        "id": "cmd_1757450947456_26_hsxpsccll",
+        "target": {
+          "alternatives": {},
+          "primary": "select[name=\"state\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "select",
+        "value": "{{state}}"
+      },
+      {
+        "description": "Enter ZIP code",
+        "id": "cmd_1757450947456_27_bjsybgqvb",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"zipCode\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{zipCode}}"
+      },
+      {
+        "description": "Enter phone number",
+        "id": "cmd_1757450947456_28_97wr8wpyi",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"phoneNumber\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{phoneNumber}}"
+      },
+      {
+        "description": "Enter card number",
+        "id": "cmd_1757450947456_29_giva7svis",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"cardNumber\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{cardNumber}}"
+      },
+      {
+        "description": "Enter expiry date",
+        "id": "cmd_1757450947456_30_xuj9irc1l",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"expiryDate\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{expiryDate}}"
+      },
+      {
+        "description": "Enter CVV",
+        "id": "cmd_1757450947456_31_uoer0rodo",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"cvv\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{cvv}}"
+      },
+      {
+        "description": "Place order",
+        "id": "cmd_1757450947456_32_waj69oe5n",
+        "target": {
+          "alternatives": {
+            "text": "Place Order",
+            "xpath": "//button[contains(text(), \"Place Order\")]"
+          },
+          "primary": "button[type=\"submit\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "click",
+        "value": ""
+      },
+      {
+        "description": "Wait for order confirmation",
+        "id": "cmd_1757450947456_33_8p9gpgfyo",
+        "target": {
+          "alternatives": {},
+          "primary": ".order-confirmation",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "waitForElement",
+        "value": "5000"
+      },
+      {
+        "description": "Verify order number is displayed",
+        "id": "cmd_1757450947456_34_s1z7xsqsb",
+        "target": {
+          "alternatives": {},
+          "primary": ".order-number",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "assert",
+        "value": "exists"
+      }
+    ],
+    "description": "Example checkout flow with shipping and payment",
+    "deviceType": "desktop",
+    "id": "gin_juice_checkout_1757450947458",
+    "metadata": {
+      "createdAt": "2025-09-09T20:49:07.456Z",
+      "duration": 0,
+      "recommendedOptions": {
+        "smartWaits": true
+      },
+      "updatedAt": "2025-09-10T13:11:41.280Z"
+    },
+    "name": "Gin & Juice - Checkout",
+    "project": "Examples",
+    "testDataFileId": "gin_juice_test_data"
+  }
+}

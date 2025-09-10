@@ -1,0 +1,372 @@
+{
+  "version": "chrome-recorder-flow@1",
+  "flow": {
+    "code": {
+      "selenium": "await driver.get('https://www.google.com/');\n\nawait driver.findElement(By.css('#APjFqb')).sendKeys('la serena');\n\nawait driver.findElement(By.css('[data-testid=\"searchbox-dates-container\"]')).click();\n\nawait driver.sleep(1000);\n\n// Wait for network idle (2000ms quiet period)\nawait fcWaitForNetworkIdle(2000, 10000);\n\n// Wait for network idle (2000ms quiet period)\nawait fcWaitForNetworkIdle(2000, 10000);\n\nawait driver.findElement(By.css('[data-testid=\"searchbox-dates-container\"]')).click();\n\nawait driver.sleep(1000);\n\n// Wait for network idle (2000ms quiet period)\nawait fcWaitForNetworkIdle(2000, 10000);\n\n// Wait for network idle (2000ms quiet period)\nawait fcWaitForNetworkIdle(2000, 10000);\n\nawait driver.findElement(By.css('#calendar-searchboxdatepicker > div.f0a464a4f7 > div.a2142b454f.ecb788f3b7.c0b8f1e8f8')).click();\n\n// Wait for network idle (1000ms quiet period)\nawait fcWaitForNetworkIdle(1000, 10000);\n\n// Wait for network idle (1000ms quiet period)\nawait fcWaitForNetworkIdle(1000, 10000);\n\nawait driver.findElement(By.css('#calendar-searchboxdatepicker > div.f0a464a4f7 > div.a2142b454f.ecb788f3b7.c0b8f1e8f8')).click();\n\nawait driver.findElement(By.css('#:rh:')).sendKeys('La Serena');\n\nawait driver.findElement(By.css('#indexsearch > div.baccac522b > div.a1a4e45ea5 > form > div.b7ef425131.e9f1adff2b > div.b769347817.a7e79c28d6:nth-of-type(4) > button.de576f5064.b46cd7aad7')).click();\n\nawait driver.sleep(1000);",
+      "seleniumClean": "get(https://www.google.com/\nfindElement(css:#APjFqb)).sendKeys(la serena\nfindElement(css:[data-testid=searchbox-dates-container])).click(\n// Wait after click (navigation)\nsleep(1000\n// Wait for network idle (2000ms quiet period)\nfcWaitForNetworkIdle(2000, 10000\n// Wait for network idle (2000ms quiet period)\nfcWaitForNetworkIdle(2000, 10000\nfindElement(css:[data-testid=searchbox-dates-container])).click(\n// Wait after click (navigation)\nsleep(1000\n// Wait for network idle (2000ms quiet period)\nfcWaitForNetworkIdle(2000, 10000\n// Wait for network idle (2000ms quiet period)\nfcWaitForNetworkIdle(2000, 10000\nfindElement(css:#calendar-searchboxdatepicker > div.f0a464a4f7 > div.a2142b454f.ecb788f3b7.c0b8f1e8f8)).click(\n// Wait for network idle (1000ms quiet period)\nfcWaitForNetworkIdle(1000, 10000\n// Wait for network idle (1000ms quiet period)\nfcWaitForNetworkIdle(1000, 10000\nfindElement(css:#calendar-searchboxdatepicker > div.f0a464a4f7 > div.a2142b454f.ecb788f3b7.c0b8f1e8f8)).click(\nfindElement(css:#:rh:)).sendKeys(La Serena\nfindElement(css:#indexsearch > div.baccac522b > div.a1a4e45ea5 > form > div.b7ef425131.e9f1adff2b > div.b769347817.a7e79c28d6:nth-of-type(4) > button.de576f5064.b46cd7aad7)).click(\n// Wait after click (navigation)\nsleep(1000"
+    },
+    "commands": [
+      {
+        "id": "cmd_1757533842009_8xpei3sq4",
+        "timestamp": 1757533842009,
+        "type": "navigate",
+        "value": "https://www.google.com/"
+      },
+      {
+        "id": "cmd_1757533849732_dwyq81vgi",
+        "metadata": {
+          "smartRecording": true,
+          "tagName": "textarea",
+          "text": "",
+          "timestamp": 1757533849726
+        },
+        "target": {
+          "primary": "#APjFqb"
+        },
+        "timestamp": 1757533849732,
+        "type": "type",
+        "value": "la serena",
+        "waitDecision": {
+          "budgetLeft": 20000,
+          "observed": false,
+          "reason": "not_observed",
+          "signals": {}
+        }
+      },
+      {
+        "id": "cmd_1757533861433_1bo0jigii",
+        "isSynthetic": false,
+        "metadata": {
+          "smartRecording": true,
+          "tagName": "button",
+          "text": "Fecha de entrada — Fecha de salida",
+          "timestamp": 1757533860923
+        },
+        "target": {
+          "primary": "[data-testid=\"searchbox-dates-container\"]"
+        },
+        "timestamp": 1757533861433,
+        "type": "click",
+        "waitDecision": {
+          "allocated": 0,
+          "budgetLeft": 20000,
+          "observed": true,
+          "reason": "no_wait_needed",
+          "requested": 0,
+          "signals": {
+            "bgComms": 0,
+            "mutBurst": 15,
+            "urlChanged": false,
+            "xhrEnd": 0,
+            "xhrStart": 0
+          }
+        }
+      },
+      {
+        "description": "Wait after click (navigation)",
+        "id": "cmd_1757533861433_pl51twl1b",
+        "metadata": {
+          "stepSettings": {
+            "customDescription": "Wait after click (navigation)"
+          }
+        },
+        "timestamp": 1757533861434,
+        "type": "wait",
+        "value": "1000"
+      },
+      {
+        "id": "cmd_1757533866383_xjh59lf1u",
+        "metadata": {
+          "allocatedMs": 2000,
+          "budgetRemainingMs": 18000,
+          "injected": true,
+          "mutationsDelta": 19,
+          "reason": "ajax_after_click",
+          "requestedMs": 2000,
+          "smartWait": true,
+          "telemetry": true,
+          "urlChanged": false,
+          "xhrInFlightEnd": 0,
+          "xhrInFlightStart": 0
+        },
+        "timestamp": 1757533866383,
+        "type": "waitForNetworkIdle",
+        "value": 2000
+      },
+      {
+        "id": "cmd_1757533866383_xjh59lf1u",
+        "metadata": {
+          "allocatedMs": 2000,
+          "budgetRemainingMs": 18000,
+          "injected": true,
+          "mutationsDelta": 19,
+          "reason": "ajax_after_click",
+          "requestedMs": 2000,
+          "smartWait": true,
+          "telemetry": true,
+          "urlChanged": false,
+          "xhrInFlightEnd": 0,
+          "xhrInFlightStart": 0
+        },
+        "timestamp": 1757533866383,
+        "type": "waitForNetworkIdle",
+        "value": 2000
+      },
+      {
+        "id": "cmd_1757533866436_l4zjx1061",
+        "isSynthetic": false,
+        "metadata": {
+          "smartRecording": true,
+          "tagName": "button",
+          "text": "Fecha de entrada — Fecha de salida",
+          "timestamp": 1757533865869
+        },
+        "target": {
+          "primary": "[data-testid=\"searchbox-dates-container\"]"
+        },
+        "timestamp": 1757533866436,
+        "type": "click",
+        "waitDecision": {
+          "allocated": 2000,
+          "budgetLeft": 18000,
+          "observed": true,
+          "reason": "ajax_after_click",
+          "requested": 2000,
+          "signals": {
+            "bgComms": 0,
+            "mutBurst": 4,
+            "urlChanged": false,
+            "xhrEnd": 0,
+            "xhrStart": 0
+          }
+        }
+      },
+      {
+        "description": "Wait after click (navigation)",
+        "id": "cmd_1757533866436_b6rdyx9xc",
+        "metadata": {
+          "stepSettings": {
+            "customDescription": "Wait after click (navigation)"
+          }
+        },
+        "timestamp": 1757533866437,
+        "type": "wait",
+        "value": "1000"
+      },
+      {
+        "id": "cmd_1757533869284_0obvc3oie",
+        "metadata": {
+          "allocatedMs": 2000,
+          "budgetRemainingMs": 16000,
+          "injected": true,
+          "mutationsDelta": 29,
+          "reason": "ajax_after_click",
+          "requestedMs": 2000,
+          "smartWait": true,
+          "telemetry": true,
+          "urlChanged": false,
+          "xhrInFlightEnd": 0,
+          "xhrInFlightStart": 0
+        },
+        "timestamp": 1757533869284,
+        "type": "waitForNetworkIdle",
+        "value": 2000
+      },
+      {
+        "id": "cmd_1757533869284_0obvc3oie",
+        "metadata": {
+          "allocatedMs": 2000,
+          "budgetRemainingMs": 16000,
+          "injected": true,
+          "mutationsDelta": 29,
+          "reason": "ajax_after_click",
+          "requestedMs": 2000,
+          "smartWait": true,
+          "telemetry": true,
+          "urlChanged": false,
+          "xhrInFlightEnd": 0,
+          "xhrInFlightStart": 0
+        },
+        "timestamp": 1757533869284,
+        "type": "waitForNetworkIdle",
+        "value": 2000
+      },
+      {
+        "id": "cmd_1757533869338_rdvje2jnx",
+        "isSynthetic": false,
+        "metadata": {
+          "smartRecording": true,
+          "tagName": "span",
+          "text": "16",
+          "timestamp": 1757533868772
+        },
+        "target": {
+          "primary": "#calendar-searchboxdatepicker > div.f0a464a4f7 > div.a2142b454f.fb6f2a3ebc:nth-of-type(1) > div.c37f87f9d2 > div.d7bd90e008:nth-of-type(1) > table.b8fcb0c66a > tbody > tr:nth-of-type(3) > td.f6ec917956:nth-of-type(3) > span.ecb788f3b7.c0b8f1e8f8"
+        },
+        "timestamp": 1757533869338,
+        "type": "click",
+        "waitDecision": {
+          "allocated": 2000,
+          "budgetLeft": 16000,
+          "observed": true,
+          "reason": "ajax_after_click",
+          "requested": 2000,
+          "signals": {
+            "bgComms": 0,
+            "mutBurst": 6,
+            "urlChanged": false,
+            "xhrEnd": 0,
+            "xhrStart": 0
+          }
+        }
+      },
+      {
+        "id": "cmd_1757533872168_3w2sxg5gb",
+        "metadata": {
+          "allocatedMs": 1000,
+          "budgetRemainingMs": 15000,
+          "injected": true,
+          "mutationsDelta": 94,
+          "reason": "ajax_after_click",
+          "requestedMs": 2000,
+          "smartWait": true,
+          "telemetry": true,
+          "urlChanged": false,
+          "xhrInFlightEnd": 0,
+          "xhrInFlightStart": 0
+        },
+        "timestamp": 1757533872168,
+        "type": "waitForNetworkIdle",
+        "value": 1000
+      },
+      {
+        "id": "cmd_1757533872168_3w2sxg5gb",
+        "metadata": {
+          "allocatedMs": 1000,
+          "budgetRemainingMs": 15000,
+          "injected": true,
+          "mutationsDelta": 94,
+          "reason": "ajax_after_click",
+          "requestedMs": 2000,
+          "smartWait": true,
+          "telemetry": true,
+          "urlChanged": false,
+          "xhrInFlightEnd": 0,
+          "xhrInFlightStart": 0
+        },
+        "timestamp": 1757533872168,
+        "type": "waitForNetworkIdle",
+        "value": 1000
+      },
+      {
+        "id": "cmd_1757533872179_tiackz33n",
+        "isSynthetic": false,
+        "metadata": {
+          "smartRecording": true,
+          "tagName": "span",
+          "text": "13",
+          "timestamp": 1757533871661
+        },
+        "target": {
+          "primary": "#calendar-searchboxdatepicker > div.f0a464a4f7 > div.a2142b454f.fb6f2a3ebc:nth-of-type(1) > div.c37f87f9d2 > div.d7bd90e008:nth-of-type(2) > table.b8fcb0c66a > tbody > tr:nth-of-type(3) > td.f6ec917956:nth-of-type(2) > span.ecb788f3b7.c0b8f1e8f8"
+        },
+        "timestamp": 1757533872179,
+        "type": "click",
+        "waitDecision": {
+          "allocated": 1000,
+          "budgetLeft": 15000,
+          "observed": true,
+          "reason": "ajax_after_click",
+          "requested": 2000,
+          "signals": {
+            "bgComms": 0,
+            "mutBurst": 14,
+            "urlChanged": false,
+            "xhrEnd": 0,
+            "xhrStart": 0
+          }
+        }
+      },
+      {
+        "id": "cmd_1757533874333_t4r5747hm",
+        "metadata": {
+          "smartRecording": true,
+          "tagName": "input",
+          "text": "",
+          "timestamp": 1757533874331
+        },
+        "target": {
+          "primary": "#:rh:"
+        },
+        "timestamp": 1757533874333,
+        "type": "type",
+        "value": "La Serena",
+        "waitDecision": {
+          "budgetLeft": 15000,
+          "observed": false,
+          "reason": "not_observed",
+          "signals": {}
+        }
+      },
+      {
+        "id": "cmd_1757533874837_j89em5i3t",
+        "isSynthetic": false,
+        "metadata": {
+          "smartRecording": true,
+          "tagName": "button",
+          "text": "Buscar",
+          "timestamp": 1757533874327
+        },
+        "target": {
+          "primary": "#indexsearch > div.baccac522b > div.a1a4e45ea5 > form > div.b7ef425131.e9f1adff2b > div.b769347817.a7e79c28d6:nth-of-type(4) > button.de576f5064.b46cd7aad7"
+        },
+        "timestamp": 1757533874837,
+        "type": "click",
+        "waitDecision": {
+          "allocated": 0,
+          "budgetLeft": 15000,
+          "observed": true,
+          "reason": "no_wait_needed",
+          "requested": 0,
+          "signals": {
+            "bgComms": 0,
+            "mutBurst": 6,
+            "urlChanged": false,
+            "xhrEnd": 0,
+            "xhrStart": 0
+          }
+        }
+      },
+      {
+        "description": "Wait after click (navigation)",
+        "id": "cmd_1757533874837_k5h4el6jf",
+        "metadata": {
+          "stepSettings": {
+            "customDescription": "Wait after click (navigation)"
+          }
+        },
+        "timestamp": 1757533874838,
+        "type": "wait",
+        "value": "1000"
+      }
+    ],
+    "deviceType": "desktop",
+    "id": "flow_1757533841964_vtnlfunlz",
+    "metadata": {
+      "createdAt": "2025-09-10T19:50:41.965Z",
+      "duration": 53407,
+      "pageCount": 4,
+      "recommendedOptions": {
+        "idleQuietMs": 1500,
+        "smartWaits": true
+      },
+      "updatedAt": "2025-09-10T19:51:35.372Z",
+      "url": "https://www.booking.com/searchresults.es.html?ss=La+Serena&ssne=La+Serena&ssne_untouched=La+Serena&efdco=1&label=la-serena-fsSfx4ZooYCaVwxeAZOBjAS388370207742%3Apl%3Ata%3Ap1340%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2395367640425%3Akwd-17157461%3Alp1000112%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YWiN3YY6TdisqFnE_xanuq8&aid=383261&lang=es&sb=1&src_elem=sb&src=city&dest_id=-887872&dest_type=city&checkin=2025-09-16&checkout=2025-10-13&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure&sb_lp=1",
+      "viewport": {
+        "height": 644,
+        "width": 1382
+      }
+    },
+    "name": "busqueda google"
+  }
+}

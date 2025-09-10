@@ -1,0 +1,141 @@
+{
+  "version": "chrome-recorder-flow@1",
+  "flow": {
+    "commands": [
+      {
+        "description": "Navigate to Gin and Juice login page",
+        "id": "cmd_1757450947456_1_t6lwjm8z8",
+        "target": {
+          "alternatives": {},
+          "primary": "https://ginandjuice.shop/my-account",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "navigate",
+        "value": "https://ginandjuice.shop/my-account"
+      },
+      {
+        "description": "Wait for username field",
+        "id": "cmd_1757450947456_2_yf03lp2j7",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"username\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "waitForElement",
+        "value": "2000"
+      },
+      {
+        "description": "Enter username",
+        "id": "cmd_1757450947456_3_wkyaidf4w",
+        "target": {
+          "alternatives": {
+            "id": "username",
+            "placeholder": "Username"
+          },
+          "primary": "input[name=\"username\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{username}}"
+      },
+      {
+        "description": "Submit username",
+        "id": "cmd_1757450947456_4_k4csqdwzv",
+        "target": {
+          "alternatives": {
+            "text": "Log in",
+            "xpath": "//button[contains(text(), \"Log in\")]"
+          },
+          "primary": "button[type=\"submit\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "click",
+        "value": ""
+      },
+      {
+        "description": "Wait for password field",
+        "id": "cmd_1757450947456_5_kk02h6vz9",
+        "target": {
+          "alternatives": {},
+          "primary": "input[name=\"password\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "waitForElement",
+        "value": "2000"
+      },
+      {
+        "description": "Enter password",
+        "id": "cmd_1757450947456_6_g1adq4gu0",
+        "target": {
+          "alternatives": {
+            "name": "password",
+            "type": "password"
+          },
+          "primary": "input[name=\"password\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "type",
+        "value": "{{password}}"
+      },
+      {
+        "description": "Submit password",
+        "id": "cmd_1757450947456_7_6rv2f9hsv",
+        "target": {
+          "alternatives": {
+            "text": "Log in",
+            "xpath": "//button[contains(text(), \"Log in\")]"
+          },
+          "primary": "button[type=\"submit\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "click",
+        "value": ""
+      },
+      {
+        "description": "Wait for login to complete",
+        "id": "cmd_1757450947456_8_68i8gc7vv",
+        "target": {
+          "alternatives": {},
+          "primary": "",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "waitForUrlChange",
+        "value": "3000"
+      },
+      {
+        "description": "Verify logged in successfully",
+        "id": "cmd_1757450947456_9_9j3g6r8ma",
+        "target": {
+          "alternatives": {},
+          "primary": "h1",
+          "strategy": "css"
+        },
+        "timestamp": 1757450947456,
+        "type": "assert",
+        "value": "textContains:My account"
+      }
+    ],
+    "description": "Example login flow for Gin and Juice demo site",
+    "deviceType": "desktop",
+    "id": "gin_juice_login_1757450947456",
+    "metadata": {
+      "createdAt": "2025-09-09T20:49:07.456Z",
+      "duration": 0,
+      "recommendedOptions": {
+        "smartWaits": true
+      },
+      "updatedAt": "2025-09-09T20:49:07.456Z"
+    },
+    "name": "Gin & Juice - Login",
+    "project": "Examples",
+    "testDataFileId": "gin_juice_test_data"
+  }
+}
