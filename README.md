@@ -6,7 +6,7 @@
 - Gin & Juice - Login (9 commands)
 - Gin & Juice - Logout (6 commands)
 - Tutorial: Google Search (6 commands)
-- Gin & Juice - Subscribe (11 commands)
+- Gin & Juice - Subscribe (5 commands)
 
 ## Test Suites (1)
 - ð§ª Gin & Juice - Complete E2E Test Suite (2 flows)
@@ -16,4 +16,4 @@
 2. Connect to this repository
 3. Pull to import all tests
 
-Generated: 2025-09-16T19:49:20.359Z
+Generated: 2025-09-16T19:59:36.218Z
