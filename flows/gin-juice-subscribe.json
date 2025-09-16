@@ -1,0 +1,224 @@
+{
+  "version": "chrome-recorder-flow@1",
+  "flow": {
+    "code": {
+      "selenium": "await driver.get('chrome://newtab/');\n\nawait driver.findElement(By.css('#subscribe > input:nth-of-type(1)')).sendKeys('avisenti@gmail.com');\n\nawait driver.sleep(3000);\n\nawait driver.sleep(3000);\n\n// Wait for network idle (2000ms quiet period)\nawait fcWaitForNetworkIdle(2000, 10000);\n\n// Wait for network idle (2000ms quiet period)\nawait fcWaitForNetworkIdle(2000, 10000);\n\nawait driver.findElement(By.css('#subscribe > button.button')).click();\n\nawait driver.sleep(1000);\n\nawait driver.findElement(By.css('#copy-coupon-button')).click();\n\nawait driver.findElement(By.css('#coupon-dialog > div.coupon-wrapper > button.close-button')).click();\n\nawait driver.sleep(1000);",
+      "seleniumClean": "get(chrome://newtab/\nfindElement(css:#subscribe > input:nth-of-type(1))).sendKeys(avisenti@gmail.com\nsleep(3000\nsleep(3000\n// Wait for network idle (2000ms quiet period)\nfcWaitForNetworkIdle(2000, 10000\n// Wait for network idle (2000ms quiet period)\nfcWaitForNetworkIdle(2000, 10000\nfindElement(css:#subscribe > button.button)).click(\n// Wait after click (navigation)\nsleep(1000\nfindElement(css:#copy-coupon-button)).click(\nfindElement(css:#coupon-dialog > div.coupon-wrapper > button.close-button)).click(\n// Wait after click (navigation)\nsleep(1000"
+    },
+    "commands": [
+      {
+        "id": "cmd_1758052078016_60t8y0nwv",
+        "timestamp": 1758052078016,
+        "type": "navigate",
+        "value": "chrome://newtab/"
+      },
+      {
+        "id": "cmd_1758052090105_aa3lw493n",
+        "metadata": {
+          "tagName": "input",
+          "text": "",
+          "timestamp": 1758052090099
+        },
+        "target": {
+          "primary": "#subscribe > input:nth-of-type(1)"
+        },
+        "timestamp": 1758052090105,
+        "type": "type",
+        "value": "avisenti@gmail.com",
+        "waitDecision": {
+          "budgetLeft": 20000,
+          "observed": false,
+          "reason": "not_observed",
+          "signals": {}
+        }
+      },
+      {
+        "id": "cmd_1758052092547_nqqrrf7r5",
+        "metadata": {
+          "injected": true,
+          "reason": "Element readiness check after dynamic update",
+          "smartWait": true
+        },
+        "timestamp": 1758052092547,
+        "type": "wait",
+        "value": "3000"
+      },
+      {
+        "id": "cmd_1758052092547_nqqrrf7r5",
+        "metadata": {
+          "injected": true,
+          "reason": "Element readiness check after dynamic update",
+          "smartWait": true
+        },
+        "timestamp": 1758052092547,
+        "type": "wait",
+        "value": "3000"
+      },
+      {
+        "id": "cmd_1758052092568_yox071eoy",
+        "metadata": {
+          "allocatedMs": 2000,
+          "budgetRemainingMs": 18000,
+          "injected": true,
+          "mutationsDelta": 3,
+          "reason": "ajax_after_click",
+          "requestedMs": 2000,
+          "smartWait": true,
+          "telemetry": true,
+          "urlChanged": false,
+          "xhrInFlightEnd": 0,
+          "xhrInFlightStart": 0
+        },
+        "timestamp": 1758052092568,
+        "type": "waitForNetworkIdle",
+        "value": 2000
+      },
+      {
+        "id": "cmd_1758052092568_yox071eoy",
+        "metadata": {
+          "allocatedMs": 2000,
+          "budgetRemainingMs": 18000,
+          "injected": true,
+          "mutationsDelta": 3,
+          "reason": "ajax_after_click",
+          "requestedMs": 2000,
+          "smartWait": true,
+          "telemetry": true,
+          "urlChanged": false,
+          "xhrInFlightEnd": 0,
+          "xhrInFlightStart": 0
+        },
+        "timestamp": 1758052092568,
+        "type": "waitForNetworkIdle",
+        "value": 2000
+      },
+      {
+        "id": "cmd_1758052092582_rk9v5lv3u",
+        "isSynthetic": false,
+        "metadata": {
+          "tagName": "button",
+          "text": "Subscribe",
+          "timestamp": 1758052091521
+        },
+        "target": {
+          "primary": "#subscribe > button.button"
+        },
+        "timestamp": 1758052092582,
+        "type": "click",
+        "waitDecision": {
+          "allocated": 0,
+          "budgetLeft": 15000,
+          "observed": true,
+          "reason": "Element readiness check after dynamic update",
+          "requested": 0,
+          "signals": {
+            "bgComms": 0,
+            "mutBurst": 0,
+            "urlChanged": false,
+            "xhrEnd": 0,
+            "xhrStart": 0
+          }
+        }
+      },
+      {
+        "description": "Wait after click (navigation)",
+        "id": "cmd_1758052092583_r73n650ky",
+        "metadata": {
+          "stepSettings": {
+            "customDescription": "Wait after click (navigation)"
+          }
+        },
+        "timestamp": 1758052092583,
+        "type": "wait",
+        "value": "1000"
+      },
+      {
+        "id": "cmd_1758052094554_d2ulbncgs",
+        "isSynthetic": false,
+        "metadata": {
+          "tagName": "button",
+          "text": "",
+          "timestamp": 1758052093534
+        },
+        "target": {
+          "primary": "#copy-coupon-button"
+        },
+        "timestamp": 1758052094554,
+        "type": "click",
+        "waitDecision": {
+          "allocated": 0,
+          "budgetLeft": 15000,
+          "observed": true,
+          "reason": "no_wait_needed",
+          "requested": 0,
+          "signals": {
+            "bgComms": 0,
+            "mutBurst": 10,
+            "urlChanged": false,
+            "xhrEnd": 0,
+            "xhrStart": 0
+          }
+        }
+      },
+      {
+        "id": "cmd_1758052097226_uuq215fpq",
+        "isSynthetic": false,
+        "metadata": {
+          "tagName": "button",
+          "text": "",
+          "timestamp": 1758052096187
+        },
+        "target": {
+          "primary": "#coupon-dialog > div.coupon-wrapper > button.close-button"
+        },
+        "timestamp": 1758052097226,
+        "type": "click",
+        "waitDecision": {
+          "allocated": 0,
+          "budgetLeft": 15000,
+          "observed": true,
+          "reason": "no_wait_needed",
+          "requested": 0,
+          "signals": {
+            "bgComms": 0,
+            "mutBurst": 10,
+            "urlChanged": false,
+            "xhrEnd": 0,
+            "xhrStart": 0
+          }
+        }
+      },
+      {
+        "description": "Wait after click (navigation)",
+        "id": "cmd_1758052097226_f0qyt9xx7",
+        "metadata": {
+          "stepSettings": {
+            "customDescription": "Wait after click (navigation)"
+          }
+        },
+        "timestamp": 1758052097227,
+        "type": "wait",
+        "value": "1000"
+      }
+    ],
+    "deviceType": "desktop",
+    "id": "flow_1758052077911_w33zxxgj4",
+    "metadata": {
+      "createdAt": "2025-09-16T19:47:58.012Z",
+      "duration": 20630,
+      "pageCount": 3,
+      "recommendedOptions": {
+        "idleQuietMs": 1500,
+        "smartWaits": true
+      },
+      "updatedAt": "2025-09-16T19:48:18.642Z",
+      "url": "https://ginandjuice.shop/about",
+      "viewport": {
+        "height": 644,
+        "width": 1382
+      }
+    },
+    "name": "Gin & Juice - Subscribe",
+    "project": "Examples"
+  }
+}
