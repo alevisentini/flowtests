@@ -39,7 +39,7 @@
           "smartWait": true
         },
         "type": "wait",
-        "value": "5000"
+        "value": "6000"
       },
       {
         "id": "cmd_1758053461720_0mtifrdj6",
