@@ -10,7 +10,7 @@
         "id": "cmd_1758053450189_qchq4q06s",
         "timestamp": 1758053450189,
         "type": "navigate",
-        "value": "chrome://newtab/"
+        "value": "https://ginandjuice.shop/about"
       },
       {
         "id": "cmd_1758053459948_ouibbqj8j",
@@ -23,7 +23,7 @@
           "primary": "#subscribe > input:nth-of-type(1)"
         },
         "type": "type",
-        "value": "avisenti@gmail.com",
+        "value": "avisenti@google.com",
         "waitDecision": {
           "budgetLeft": 20000,
           "observed": false,
