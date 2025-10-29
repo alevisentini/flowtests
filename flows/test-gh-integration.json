@@ -1,0 +1,469 @@
+{
+  "version": "chrome-recorder-flow@1",
+  "flow": {
+    "code": {
+      "selenium": "await driver.get('http://localhost/test-self-healing/index-v1-updated.html');\n\nawait driver.wait(until.elementLocated(By.css('input[placeholder=\"Enter username\"]')), 5000);\n\nawait driver.findElement(By.css('input[placeholder=\"Enter username\"]')).sendKeys('alejandro');\n\nawait driver.wait(until.elementLocated(By.css('input[placeholder=\"Enter email\"]')), 5000);\n\nawait driver.findElement(By.css('input[placeholder=\"Enter email\"]')).sendKeys('avisenti@gmail.com');\n\nawait driver.wait(until.elementLocated(By.css('[data-testid=\"country-select\"]')), 5000);\n\nawait driver.findElement(By.css('[data-testid=\"country-select\"]')).sendKeys('ca');\n\nconst selectEl = await driver.findElement(By.css('[data-testid=\"country-select\"]'));\nawait selectEl.findElement(By.xpath(\".//option[normalize-space(.)='ca']\")).click();\n\nawait driver.findElement(By.css('[data-testid=\"country-select\"]')).click();\n\nawait driver.wait(until.elementLocated(By.xpath('//button[@type=\\'submit\\'][normalize-space()=\\'Submit Form\\']')), 5000);\n\nawait driver.findElement(By.xpath('//button[@type=\\'submit\\'][normalize-space()=\\'Submit Form\\']')).click();",
+      "seleniumClean": "get(http://localhost/test-self-healing/index-v1-updated.html\nwait(until.elementLocated(css:input[placeholder=Enter username])), 5000\nfindElement(css:input[placeholder=Enter username])).sendKeys(alejandro\nwait(until.elementLocated(css:input[placeholder=Enter email])), 5000\nfindElement(css:input[placeholder=Enter email])).sendKeys(avisenti@gmail.com\nwait(until.elementLocated(css:[data-testid=country-select])), 5000\nfindElement(css:[data-testid=country-select])).sendKeys(ca\nconst selectEl = findElement(css:[data-testid=country-select])\nselectEl.findElement(xpath:.//option[normalize-space(.)=ca])).click(\nfindElement(css:[data-testid=country-select])).click(\nwait(until.elementLocated(xpath://button[@type=\\submit\\][normalize-space()=\\Submit Form\\])), 5000\nfindElement(xpath://button[@type=\\submit\\][normalize-space()=\\Submit Form\\])).click("
+    },
+    "commands": [
+      {
+        "id": "cmd_1761675409971_wg5oi4pvw",
+        "metadata": {
+          "manual": true
+        },
+        "target": {
+          "primary": "main"
+        },
+        "timestamp": 1761675530411,
+        "type": "navigate",
+        "value": "http://localhost/test-self-healing/index-v2.html"
+      },
+      {
+        "id": "cmd_1761675412361_zn0u1ozut",
+        "metadata": {
+          "addedBy": "WaitInjector",
+          "attributes": {
+            "aria-label": "Username",
+            "data-testid": "username-input",
+            "id": "username",
+            "name": "username",
+            "placeholder": "Enter username",
+            "type": "text"
+          },
+          "beforeCommand": "type",
+          "elementInfo": {
+            "attributes": {
+              "aria-label": "Username",
+              "data-testid": "username-input",
+              "id": "username",
+              "name": "username",
+              "placeholder": "Enter username",
+              "type": "text"
+            },
+            "tagName": "input"
+          },
+          "originalSelector": "[data-testid=\"username-input\"]",
+          "reason": "ensure_element_ready",
+          "tagName": "input",
+          "text": "",
+          "timestamp": 1761675412360
+        },
+        "target": {
+          "alternatives": {
+            "css": "input[placeholder=\"Enter username\"]",
+            "data-testid": "username-input",
+            "id": "username",
+            "playwright": "getByTestId('username-input')",
+            "testId": "username-input",
+            "text": "Username",
+            "xpath": "//html/body/div[1]/form/div[1]/input"
+          },
+          "primary": "input[placeholder=\"Enter username\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761675412363,
+        "type": "waitForElement",
+        "value": 5000
+      },
+      {
+        "id": "cmd_1761675412360_aqpos6hhu",
+        "metadata": {
+          "attributes": {
+            "aria-label": "Username",
+            "data-testid": "username-input",
+            "id": "username",
+            "name": "username",
+            "placeholder": "Enter username",
+            "type": "text"
+          },
+          "elementInfo": {
+            "attributes": {
+              "aria-label": "Username",
+              "data-testid": "username-input",
+              "id": "username",
+              "name": "username",
+              "placeholder": "Enter username",
+              "type": "text"
+            },
+            "tagName": "input"
+          },
+          "originalSelector": "[data-testid=\"username-input\"]",
+          "tagName": "input",
+          "text": "",
+          "timestamp": 1761675412360
+        },
+        "target": {
+          "alternatives": {
+            "css": "input[placeholder=\"Enter username\"]",
+            "data-testid": "username-input",
+            "id": "username",
+            "playwright": "getByTestId('username-input')",
+            "testId": "username-input",
+            "text": "Username",
+            "xpath": "//html/body/div[1]/form/div[1]/input"
+          },
+          "primary": "input[placeholder=\"Enter username\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761675412369,
+        "type": "type",
+        "value": "alejandro"
+      },
+      {
+        "id": "cmd_1761675413929_x9on8sb02",
+        "metadata": {
+          "addedBy": "WaitInjector",
+          "attributes": {
+            "aria-label": "Email address",
+            "data-testid": "email-input",
+            "id": "email",
+            "name": "email",
+            "placeholder": "Enter email",
+            "type": "email"
+          },
+          "beforeCommand": "type",
+          "elementInfo": {
+            "attributes": {
+              "aria-label": "Email address",
+              "data-testid": "email-input",
+              "id": "email",
+              "name": "email",
+              "placeholder": "Enter email",
+              "type": "email"
+            },
+            "tagName": "input"
+          },
+          "originalSelector": "[data-testid=\"email-input\"]",
+          "reason": "ensure_element_ready",
+          "tagName": "input",
+          "text": "",
+          "timestamp": 1761675413929
+        },
+        "target": {
+          "alternatives": {
+            "css": "input[placeholder=\"Enter email\"]",
+            "data-testid": "email-input",
+            "id": "email",
+            "playwright": "getByTestId('email-input')",
+            "testId": "email-input",
+            "text": "Email address",
+            "xpath": "//html/body/div[1]/form/div[2]/input"
+          },
+          "primary": "input[placeholder=\"Enter email\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761675413930,
+        "type": "waitForElement",
+        "value": 5000
+      },
+      {
+        "id": "cmd_1761675413929_tuklt8hym",
+        "metadata": {
+          "attributes": {
+            "aria-label": "Email address",
+            "data-testid": "email-input",
+            "id": "email",
+            "name": "email",
+            "placeholder": "Enter email",
+            "type": "email"
+          },
+          "elementInfo": {
+            "attributes": {
+              "aria-label": "Email address",
+              "data-testid": "email-input",
+              "id": "email",
+              "name": "email",
+              "placeholder": "Enter email",
+              "type": "email"
+            },
+            "tagName": "input"
+          },
+          "originalSelector": "[data-testid=\"email-input\"]",
+          "tagName": "input",
+          "text": "",
+          "timestamp": 1761675413929
+        },
+        "target": {
+          "alternatives": {
+            "css": "input[placeholder=\"Enter email\"]",
+            "data-testid": "email-input",
+            "id": "email",
+            "playwright": "getByTestId('email-input')",
+            "testId": "email-input",
+            "text": "Email address",
+            "xpath": "//html/body/div[1]/form/div[2]/input"
+          },
+          "primary": "input[placeholder=\"Enter email\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761675413942,
+        "type": "type",
+        "value": "avisenti@gmail.com"
+      },
+      {
+        "id": "cmd_1761675414617_d40lst3ng",
+        "metadata": {
+          "addedBy": "WaitInjector",
+          "attributes": {
+            "aria-label": "Country selection",
+            "data-testid": "country-select",
+            "id": "country",
+            "name": "country"
+          },
+          "beforeCommand": "click",
+          "elementInfo": {
+            "attributes": {
+              "aria-label": "Country selection",
+              "data-testid": "country-select",
+              "id": "country",
+              "name": "country"
+            },
+            "tagName": "select",
+            "text": "Select country... United States United Kingdom ..."
+          },
+          "reason": "ensure_element_ready",
+          "tagName": "select",
+          "text": "Select country... United States United Kingdom ...",
+          "timestamp": 1761675414617
+        },
+        "target": {
+          "alternatives": {
+            "css": "[data-testid=\"country-select\"]",
+            "data-testid": "country-select",
+            "id": "country",
+            "playwright": "getByTestId('country-select')",
+            "testId": "country-select",
+            "text": "Country selection",
+            "xpath": "//html/body/div[1]/form/div[3]/select"
+          },
+          "primary": "[data-testid=\"country-select\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761675414618,
+        "type": "waitForElement",
+        "value": 5000
+      },
+      {
+        "id": "cmd_1761675415656_8ld0zb06e",
+        "metadata": {
+          "attributes": {
+            "aria-label": "Country selection",
+            "data-testid": "country-select",
+            "id": "country",
+            "name": "country"
+          },
+          "elementInfo": {
+            "attributes": {
+              "aria-label": "Country selection",
+              "data-testid": "country-select",
+              "id": "country",
+              "name": "country"
+            },
+            "tagName": "select",
+            "text": "Select country... United States United Kingdom ..."
+          },
+          "tagName": "select",
+          "text": "Select country... United States United Kingdom ...",
+          "timestamp": 1761675415656
+        },
+        "target": {
+          "alternatives": {
+            "css": "[data-testid=\"country-select\"]",
+            "data-testid": "country-select",
+            "id": "country",
+            "playwright": "getByTestId('country-select')",
+            "testId": "country-select",
+            "text": "Country selection",
+            "xpath": "//html/body/div[1]/form/div[3]/select"
+          },
+          "primary": "[data-testid=\"country-select\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761675415661,
+        "type": "type",
+        "value": "ca"
+      },
+      {
+        "id": "cmd_1761675415657_k4v4xeo0h",
+        "metadata": {
+          "attributes": {
+            "aria-label": "Country selection",
+            "data-testid": "country-select",
+            "id": "country",
+            "name": "country"
+          },
+          "elementInfo": {
+            "attributes": {
+              "aria-label": "Country selection",
+              "data-testid": "country-select",
+              "id": "country",
+              "name": "country"
+            },
+            "tagName": "select",
+            "text": "Select country... United States United Kingdom ..."
+          },
+          "tagName": "select",
+          "text": "Select country... United States United Kingdom ...",
+          "timestamp": 1761675415657
+        },
+        "target": {
+          "alternatives": {
+            "css": "[data-testid=\"country-select\"]",
+            "data-testid": "country-select",
+            "id": "country",
+            "playwright": "getByTestId('country-select')",
+            "testId": "country-select",
+            "text": "Country selection",
+            "xpath": "//html/body/div[1]/form/div[3]/select"
+          },
+          "primary": "[data-testid=\"country-select\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761675415663,
+        "type": "select",
+        "value": "ca"
+      },
+      {
+        "id": "cmd_1761675415657_ps8c61zjj",
+        "metadata": {
+          "attributes": {
+            "aria-label": "Country selection",
+            "data-testid": "country-select",
+            "id": "country",
+            "name": "country"
+          },
+          "elementInfo": {
+            "attributes": {
+              "aria-label": "Country selection",
+              "data-testid": "country-select",
+              "id": "country",
+              "name": "country"
+            },
+            "tagName": "select",
+            "text": "Select country... United States United Kingdom ..."
+          },
+          "tagName": "select",
+          "text": "Select country... United States United Kingdom ...",
+          "timestamp": 1761675415657
+        },
+        "target": {
+          "alternatives": {
+            "css": "[data-testid=\"country-select\"]",
+            "data-testid": "country-select",
+            "id": "country",
+            "playwright": "getByTestId('country-select')",
+            "testId": "country-select",
+            "text": "Country selection",
+            "xpath": "//html/body/div[1]/form/div[3]/select"
+          },
+          "primary": "[data-testid=\"country-select\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761675415664,
+        "type": "click"
+      },
+      {
+        "id": "cmd_1761675417269_47d1cvboe",
+        "metadata": {
+          "addedBy": "WaitInjector",
+          "attributes": {
+            "aria-label": "Submit form",
+            "data-testid": "submit-button",
+            "id": "submit-btn",
+            "type": "submit"
+          },
+          "beforeCommand": "click",
+          "elementInfo": {
+            "attributes": {
+              "aria-label": "Submit form",
+              "data-testid": "submit-button",
+              "id": "submit-btn",
+              "type": "submit"
+            },
+            "tagName": "button",
+            "text": "Submit Form"
+          },
+          "originalSelector": "[data-testid=\"submit-button\"]",
+          "reason": "ensure_element_ready",
+          "tagName": "button",
+          "text": "Submit Form",
+          "timestamp": 1761675417269
+        },
+        "target": {
+          "alternatives": {
+            "css": "button[type=\"submit\"]",
+            "data-testid": "submit-button",
+            "id": "submit-btn",
+            "playwright": "getByRole('button', { name: 'Submit Form' })",
+            "testId": "submit-button",
+            "text": "Submit Form",
+            "xpath": "//button[@type='submit'][normalize-space()='Submit Form']"
+          },
+          "primary": "//button[@type='submit'][normalize-space()='Submit Form']",
+          "strategy": "xpath"
+        },
+        "timestamp": 1761675417270,
+        "type": "waitForElement",
+        "value": 5000
+      },
+      {
+        "id": "cmd_1761675417269_s2evz7itd",
+        "metadata": {
+          "attributes": {
+            "aria-label": "Submit form",
+            "data-testid": "submit-button",
+            "id": "submit-btn",
+            "type": "submit"
+          },
+          "elementInfo": {
+            "attributes": {
+              "aria-label": "Submit form",
+              "data-testid": "submit-button",
+              "id": "submit-btn",
+              "type": "submit"
+            },
+            "tagName": "button",
+            "text": "Submit Form"
+          },
+          "originalSelector": "[data-testid=\"submit-button\"]",
+          "tagName": "button",
+          "text": "Submit Form",
+          "timestamp": 1761675417269
+        },
+        "target": {
+          "alternatives": {
+            "css": "button[type=\"submit\"]",
+            "data-testid": "submit-button",
+            "id": "submit-btn",
+            "playwright": "getByRole('button', { name: 'Submit Form' })",
+            "testId": "submit-button",
+            "text": "Submit Form",
+            "xpath": "//button[@type='submit'][normalize-space()='Submit Form']"
+          },
+          "primary": "//button[@type='submit'][normalize-space()='Submit Form']",
+          "strategy": "xpath"
+        },
+        "timestamp": 1761675417277,
+        "type": "click"
+      }
+    ],
+    "deviceType": "desktop",
+    "id": "flow_1761675409622_mwsnkmmt1",
+    "metadata": {
+      "createdAt": "2025-10-28T18:16:49.632Z",
+      "duration": 10893,
+      "pageCount": 1,
+      "recommendedOptions": {
+        "idleQuietMs": 800,
+        "smartWaits": true
+      },
+      "updatedAt": "2025-10-28T18:18:50.411Z",
+      "url": "http://localhost/test-self-healing/index-v1-updated.html",
+      "viewport": {
+        "height": 644,
+        "width": 1382
+      }
+    },
+    "name": "Test SH"
+  }
+}
