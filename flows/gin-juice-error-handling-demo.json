@@ -3,8 +3,8 @@
   "flow": {
     "commands": [
       {
-        "description": "Navigate to product catalog",
-        "id": "cmd_1761248598639_8_bgciligxq",
+        "description": "Navigate to catalog page",
+        "id": "cmd_1761248598639_41_yum73xn8v",
         "target": {
           "alternatives": {},
           "primary": "https://ginandjuice.shop/catalog",
@@ -15,23 +15,22 @@
         "value": "https://ginandjuice.shop/catalog"
       },
       {
-        "description": "Wait for search field",
-        "id": "cmd_1761248598639_9_yp6yiv12r",
+        "description": "Wait for page to load",
+        "id": "cmd_1761248598639_42_bx9tsg77v",
         "target": {
           "alternatives": {},
-          "primary": "#searchBar",
+          "primary": "",
           "strategy": "css"
         },
         "timestamp": 1761248598639,
-        "type": "waitForElement",
+        "type": "wait",
         "value": "2000"
       },
       {
-        "description": "Search for products",
-        "id": "cmd_1761248598639_10_cm46zrhq1",
+        "description": "Search for vodka products",
+        "id": "cmd_1761248598639_43_n4clobhn8",
         "target": {
           "alternatives": {
-            "name": "searchTerm",
             "placeholder": "Search products"
           },
           "primary": "#searchBar",
@@ -39,11 +38,11 @@
         },
         "timestamp": 1761248598639,
         "type": "type",
-        "value": "{{searchTerm}}"
+        "value": "vodka"
       },
       {
         "description": "Submit search",
-        "id": "cmd_1761248598639_11_vs1qy6r6t",
+        "id": "cmd_1761248598639_44_z92muj884",
         "target": {
           "alternatives": {},
           "primary": "#searchBar",
@@ -55,37 +54,25 @@
       },
       {
         "description": "Wait for search results",
-        "id": "cmd_1761248598639_12_uzpgqm93l",
+        "id": "cmd_1761248598639_45_5nngdjj30",
         "target": {
           "alternatives": {},
           "primary": "",
           "strategy": "css"
         },
         "timestamp": 1761248598639,
-        "type": "waitForNetworkIdle",
+        "type": "wait",
         "value": "2000"
       },
       {
-        "description": "Wait for View details button",
-        "id": "cmd_1761248598639_13_f16hbr82t",
-        "target": {
-          "alternatives": {},
-          "primary": "span.button",
-          "strategy": "css"
-        },
-        "timestamp": 1761248598639,
-        "type": "waitForElement",
-        "value": "2000"
-      },
-      {
-        "description": "Open product details",
-        "id": "cmd_1761248598639_14_byal5egax",
+        "description": "[INTENTIONAL FAILURE] Try to click non-existent element",
+        "id": "cmd_1761248598639_46_yl5lictnc",
         "target": {
           "alternatives": {
-            "text": "View details",
-            "xpath": "//span[contains(@class, \"button\") and normalize-space(text())=\"View details\"]"
+            "css": ".fake-selector-that-will-fail",
+            "xpath": "//button[@id=\"this-does-not-exist\"]"
           },
-          "primary": "span.button",
+          "primary": "#non-existent-element-12345",
           "strategy": "css"
         },
         "timestamp": 1761248598639,
@@ -93,48 +80,45 @@
         "value": ""
       },
       {
-        "description": "Wait for Add to cart button",
-        "id": "cmd_1761248598639_15_31az0aakg",
+        "description": "[INTENTIONAL FAILURE] Assert text that doesn't exist",
+        "id": "cmd_1761248598639_47_j8sxr9pxf",
         "target": {
           "alternatives": {},
-          "primary": "button.button[type=\"submit\"]",
-          "strategy": "css"
-        },
-        "timestamp": 1761248598639,
-        "type": "waitForElement",
-        "value": "2000"
-      },
-      {
-        "description": "Add product to cart",
-        "id": "cmd_1761248598639_16_xexuwo1ab",
-        "target": {
-          "alternatives": {
-            "text": "Add to cart",
-            "xpath": "//button[contains(@class, \"button\") and @type=\"submit\" and contains(normalize-space(.), \"Add to cart\")]"
-          },
-          "primary": "button.button[type=\"submit\"]",
-          "strategy": "css"
-        },
-        "timestamp": 1761248598639,
-        "type": "click",
-        "value": ""
-      },
-      {
-        "description": "Verify cart has 1 item",
-        "id": "cmd_1761248598639_16_pvjzqbapz",
-        "target": {
-          "alternatives": {},
-          "primary": ".cart-count",
+          "primary": "h1",
           "strategy": "css"
         },
         "timestamp": 1761248598639,
         "type": "assert",
-        "value": "textContains:1"
+        "value": "textContains:This text will never be found"
+      },
+      {
+        "description": "Navigate to non-existent page (404 error)",
+        "id": "cmd_1761248598639_48_vnsv034db",
+        "target": {
+          "alternatives": {},
+          "primary": "https://ginandjuice.shop/non-existent-page-404",
+          "strategy": "css"
+        },
+        "timestamp": 1761248598639,
+        "type": "navigate",
+        "value": "https://ginandjuice.shop/non-existent-page-404"
+      },
+      {
+        "description": "Verify 404 error page is displayed",
+        "id": "cmd_1761248598639_49_jq5dtpioc",
+        "target": {
+          "alternatives": {},
+          "primary": "body",
+          "strategy": "css"
+        },
+        "timestamp": 1761248598639,
+        "type": "assert",
+        "value": "textContains:404"
       }
     ],
-    "description": "Example product browsing flow with search and cart",
+    "description": "Example flow that intentionally fails to demonstrate error handling",
     "deviceType": "desktop",
-    "id": "gin_juice_browse_1761248598640",
+    "id": "gin_juice_failing_1761248598643",
     "metadata": {
       "createdAt": "2025-10-23T19:43:18.639Z",
       "duration": 0,
@@ -143,7 +127,7 @@
       },
       "updatedAt": "2025-10-23T19:43:18.639Z"
     },
-    "name": "Gin & Juice - Browse Products",
+    "name": "Gin & Juice - Error Handling Demo",
     "project": "Examples",
     "testDataFileId": "gin_juice_test_data"
   }

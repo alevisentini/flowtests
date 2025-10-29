@@ -1,0 +1,377 @@
+{
+  "version": "chrome-recorder-flow@1",
+  "flow": {
+    "code": {
+      "selenium": "await driver.get('https://www.topfarmacia.it/');\n\nawait driver.wait(until.elementLocated(By.css('a[href=\"/accedi-registrati\"]')), 5000);\n\nawait driver.findElement(By.css('a[href=\"/accedi-registrati\"]')).click();\n\nawait driver.wait(until.elementLocated(By.css('input[placeholder=\"Indirizzo email\"]')), 5000);\n\nawait driver.findElement(By.css('input[placeholder=\"Indirizzo email\"]')).sendKeys('Cristian.dragota@betterqa.co');\n\nawait driver.wait(until.elementLocated(By.xpath('//button[@type=\\'submit\\'][normalize-space()=\\'Continua\\']')), 5000);\n\nawait driver.findElement(By.xpath('//button[@type=\\'submit\\'][normalize-space()=\\'Continua\\']')).click();\n\nawait driver.wait(until.elementLocated(By.css('input[placeholder=\"Password\"]')), 5000);\n\nawait driver.findElement(By.css('input[placeholder=\"Password\"]')).sendKeys('Qwerty112!!');\n\nawait driver.wait(until.elementLocated(By.xpath('//button[@type=\\'submit\\'][normalize-space()=\\'Accedi\\']')), 5000);\n\nawait driver.findElement(By.xpath('//button[@type=\\'submit\\'][normalize-space()=\\'Accedi\\']')).click();",
+      "seleniumClean": "get(https://www.topfarmacia.it/\nwait(until.elementLocated(css:a[href=/accedi-registrati])), 5000\nfindElement(css:a[href=/accedi-registrati])).click(\nwait(until.elementLocated(css:input[placeholder=Indirizzo email])), 5000\nfindElement(css:input[placeholder=Indirizzo email])).sendKeys(Cristian.dragota@betterqa.co\nwait(until.elementLocated(xpath://button[@type=\\submit\\][normalize-space()=\\Continua\\])), 5000\nfindElement(xpath://button[@type=\\submit\\][normalize-space()=\\Continua\\])).click(\nwait(until.elementLocated(css:input[placeholder=Password])), 5000\nfindElement(css:input[placeholder=Password])).sendKeys(Qwerty112!!\nwait(until.elementLocated(xpath://button[@type=\\submit\\][normalize-space()=\\Accedi\\])), 5000\nfindElement(xpath://button[@type=\\submit\\][normalize-space()=\\Accedi\\])).click("
+    },
+    "commands": [
+      {
+        "id": "cmd_1761588562512_4nvbr2wsw",
+        "target": {
+          "primary": "main"
+        },
+        "timestamp": 1761588562512,
+        "type": "navigate",
+        "value": "https://www.topfarmacia.it/"
+      },
+      {
+        "id": "cmd_1761588565719_i8xm9h8t7",
+        "metadata": {
+          "addedBy": "WaitInjector",
+          "attributes": {
+            "href": "/accedi-registrati"
+          },
+          "beforeCommand": "click",
+          "elementInfo": {
+            "attributes": {
+              "href": "/accedi-registrati"
+            },
+            "tagName": "a",
+            "text": "Accedi"
+          },
+          "manual": true,
+          "originalSelector": "div.flex.gap-6 a[href=\"/accedi-registrati\"]",
+          "reason": "ensure_element_ready",
+          "tagName": "a",
+          "text": "Accedi",
+          "timestamp": 1761588565719
+        },
+        "target": {
+          "alternatives": {},
+          "primary": "a[href=\"/accedi-registrati-novo\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761596000415,
+        "type": "waitForElement",
+        "value": "30000"
+      },
+      {
+        "id": "cmd_1761588565719_nrtgzsr34",
+        "metadata": {
+          "attributes": {
+            "href": "/accedi-registrati"
+          },
+          "elementInfo": {
+            "attributes": {
+              "href": "/accedi-registrati"
+            },
+            "tagName": "a",
+            "text": "Accedi"
+          },
+          "originalSelector": "div.flex.gap-6 a[href=\"/accedi-registrati\"]",
+          "tagName": "a",
+          "text": "Accedi",
+          "timestamp": 1761588565719
+        },
+        "target": {
+          "alternatives": {
+            "css": "a[href=\"/accedi-registrati\"]",
+            "href": "/accedi-registrati",
+            "playwright": "getByRole('link', { name: 'Accedi' })",
+            "text": "Accedi",
+            "xpath": "//a[normalize-space(.)='Accedi']"
+          },
+          "primary": "a[href=\"/accedi-registrati\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761588566001,
+        "type": "click"
+      },
+      {
+        "id": "cmd_1761588571690_fbla773o7",
+        "metadata": {
+          "addedBy": "WaitInjector",
+          "attributes": {
+            "aria-required": "true",
+            "id": "email-input",
+            "name": "email",
+            "placeholder": "Indirizzo email",
+            "type": "email"
+          },
+          "beforeCommand": "type",
+          "elementInfo": {
+            "attributes": {
+              "aria-required": "true",
+              "id": "email-input",
+              "name": "email",
+              "placeholder": "Indirizzo email",
+              "type": "email"
+            },
+            "tagName": "input"
+          },
+          "manual": true,
+          "originalSelector": "input[name=\"email\"]",
+          "reason": "ensure_element_ready",
+          "tagName": "input",
+          "text": "",
+          "timestamp": 1761588571689
+        },
+        "target": {
+          "alternatives": {},
+          "primary": "input[placeholder=\"Indirizzo email\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761590653549,
+        "type": "waitForElement",
+        "value": "30000"
+      },
+      {
+        "id": "cmd_1761588571689_fuw5yk63s",
+        "metadata": {
+          "attributes": {
+            "aria-required": "true",
+            "id": "email-input",
+            "name": "email",
+            "placeholder": "Indirizzo email",
+            "type": "email"
+          },
+          "elementInfo": {
+            "attributes": {
+              "aria-required": "true",
+              "id": "email-input",
+              "name": "email",
+              "placeholder": "Indirizzo email",
+              "type": "email"
+            },
+            "tagName": "input"
+          },
+          "originalSelector": "input[name=\"email\"]",
+          "tagName": "input",
+          "text": "",
+          "timestamp": 1761588571689
+        },
+        "target": {
+          "alternatives": {
+            "css": "input[placeholder=\"Indirizzo email\"]",
+            "id": "email-input",
+            "xpath": "//html/body/div[2]/div/div[2]/div[2]/div/div[2]/form/div/div/div[1]/div/input"
+          },
+          "primary": "input[placeholder=\"Indirizzo email\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761588571704,
+        "type": "type",
+        "value": "Cristian.dragota@betterqa.co"
+      },
+      {
+        "id": "cmd_1761588574161_x91302snr",
+        "metadata": {
+          "addedBy": "WaitInjector",
+          "attributes": {
+            "type": "submit"
+          },
+          "beforeCommand": "click",
+          "elementInfo": {
+            "attributes": {
+              "type": "submit"
+            },
+            "tagName": "button",
+            "text": "Continua"
+          },
+          "manual": true,
+          "originalSelector": "//button[normalize-space(.)='Continua']",
+          "reason": "ensure_element_ready",
+          "tagName": "button",
+          "text": "Continua",
+          "timestamp": 1761588574161
+        },
+        "target": {
+          "alternatives": {},
+          "primary": "//button[@type='submit'][normalize-space()='Continua']",
+          "strategy": "css"
+        },
+        "timestamp": 1761590661901,
+        "type": "waitForElement",
+        "value": "30000"
+      },
+      {
+        "id": "cmd_1761588574161_uecas7duj",
+        "metadata": {
+          "attributes": {
+            "type": "submit"
+          },
+          "elementInfo": {
+            "attributes": {
+              "type": "submit"
+            },
+            "tagName": "button",
+            "text": "Continua"
+          },
+          "originalSelector": "//button[normalize-space(.)='Continua']",
+          "tagName": "button",
+          "text": "Continua",
+          "timestamp": 1761588574161
+        },
+        "target": {
+          "alternatives": {
+            "css": "button[type=\"submit\"]",
+            "playwright": "getByRole('button', { name: 'Continua' })",
+            "text": "Continua",
+            "xpath": "//button[@type='submit'][normalize-space()='Continua']"
+          },
+          "primary": "//button[@type='submit'][normalize-space()='Continua']",
+          "strategy": "xpath"
+        },
+        "timestamp": 1761588574182,
+        "type": "click"
+      },
+      {
+        "id": "cmd_1761588583338_bkylwywmu",
+        "metadata": {
+          "addedBy": "WaitInjector",
+          "attributes": {
+            "aria-required": "true",
+            "id": "login-password",
+            "name": "password",
+            "placeholder": "Password",
+            "type": "password"
+          },
+          "beforeCommand": "click",
+          "elementInfo": {
+            "attributes": {
+              "aria-required": "true",
+              "id": "login-password",
+              "name": "password",
+              "placeholder": "Password",
+              "type": "password"
+            },
+            "tagName": "input"
+          },
+          "manual": true,
+          "originalSelector": "input[name=\"password\"]",
+          "reason": "ensure_element_ready",
+          "tagName": "input",
+          "text": "",
+          "timestamp": 1761588583337
+        },
+        "target": {
+          "alternatives": {},
+          "primary": "input[placeholder=\"Password\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761590668734,
+        "type": "waitForElement",
+        "value": "30000"
+      },
+      {
+        "id": "cmd_1761588584103_boj30od8d",
+        "metadata": {
+          "attributes": {
+            "aria-required": "true",
+            "id": "login-password",
+            "name": "password",
+            "placeholder": "Password",
+            "type": "password"
+          },
+          "elementInfo": {
+            "attributes": {
+              "aria-required": "true",
+              "id": "login-password",
+              "name": "password",
+              "placeholder": "Password",
+              "type": "password"
+            },
+            "tagName": "input"
+          },
+          "originalSelector": "input[name=\"password\"]",
+          "tagName": "input",
+          "text": "",
+          "timestamp": 1761588584103
+        },
+        "target": {
+          "alternatives": {
+            "css": "input[placeholder=\"Password\"]",
+            "id": "login-password",
+            "xpath": "//html/body/div[2]/div/div[2]/div[2]/div[2]/div[2]/div/form/div[2]/div/div[1]/div/input"
+          },
+          "primary": "input[placeholder=\"Password\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761588584112,
+        "type": "type",
+        "value": "Qwerty112!!"
+      },
+      {
+        "id": "cmd_1761588586684_a83xpnjb0",
+        "metadata": {
+          "addedBy": "WaitInjector",
+          "attributes": {
+            "type": "submit"
+          },
+          "beforeCommand": "click",
+          "elementInfo": {
+            "attributes": {
+              "type": "submit"
+            },
+            "tagName": "button",
+            "text": "Accedi"
+          },
+          "manual": true,
+          "originalSelector": "button[type=\"submit\"]",
+          "reason": "ensure_element_ready",
+          "tagName": "button",
+          "text": "Accedi",
+          "timestamp": 1761588586684
+        },
+        "target": {
+          "alternatives": {},
+          "primary": "//button[@type='submit'][normalize-space()='Accedi']",
+          "strategy": "css"
+        },
+        "timestamp": 1761590677173,
+        "type": "waitForElement",
+        "value": "30000"
+      },
+      {
+        "id": "cmd_1761588586684_gmu66h0dv",
+        "metadata": {
+          "attributes": {
+            "type": "submit"
+          },
+          "elementInfo": {
+            "attributes": {
+              "type": "submit"
+            },
+            "tagName": "button",
+            "text": "Accedi"
+          },
+          "originalSelector": "button[type=\"submit\"]",
+          "tagName": "button",
+          "text": "Accedi",
+          "timestamp": 1761588586684
+        },
+        "target": {
+          "alternatives": {
+            "css": "button[type=\"submit\"]",
+            "playwright": "getByRole('button', { name: 'Accedi' })",
+            "text": "Accedi",
+            "xpath": "//button[@type='submit'][normalize-space()='Accedi']"
+          },
+          "primary": "//button[@type='submit'][normalize-space()='Accedi']",
+          "strategy": "xpath"
+        },
+        "timestamp": 1761588586696,
+        "type": "click"
+      }
+    ],
+    "deviceType": "desktop",
+    "id": "flow_1761588562124_c7tzbbquh",
+    "metadata": {
+      "createdAt": "2025-10-27T18:09:22.125Z",
+      "duration": 38335,
+      "pageCount": 3,
+      "recommendedOptions": {
+        "idleQuietMs": 800,
+        "smartWaits": true
+      },
+      "updatedAt": "2025-10-27T20:13:20.415Z",
+      "url": "https://www.topfarmacia.it/",
+      "viewport": {
+        "height": 644,
+        "width": 1382
+      }
+    },
+    "name": "Top Farmacia - Login"
+  }
+}

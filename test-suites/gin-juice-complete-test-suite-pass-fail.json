@@ -1,0 +1,40 @@
+{
+  "version": "chrome-recorder-suite@1",
+  "suite": {
+    "config": {
+      "aiAnalysis": false,
+      "captureScreenshots": true,
+      "generateReport": true,
+      "parallel": false,
+      "retryCount": 0,
+      "setupFlowId": "gin_juice_login_1761248598639",
+      "stopOnFailure": false,
+      "teardownFlowId": "gin_juice_logout_1761248598642",
+      "timeout": 30000
+    },
+    "flows": [
+      "gin_juice_browse_1761248598640",
+      "gin_juice_failing_1761248598643"
+    ],
+    "id": "gin_juice_suite_example",
+    "metadata": {
+      "createdAt": "2025-10-23T19:43:18.648Z",
+      "testDataId": "gin_juice_test_data",
+      "totalRuns": 0,
+      "updatedAt": "2025-10-23T19:43:18.648Z"
+    },
+    "name": "🧪 Gin & Juice - Complete Test Suite (Pass & Fail)",
+    "testData": {
+      "compatibilityStatus": "compatible",
+      "fileId": "gin_juice_test_data",
+      "flowTestDataMap": {
+        "gin_juice_browse_1761248598640": "gin_juice_test_data",
+        "gin_juice_failing_1761248598643": "gin_juice_test_data",
+        "gin_juice_login_1761248598639": "gin_juice_test_data",
+        "gin_juice_logout_1761248598642": "gin_juice_test_data"
+      },
+      "type": "file",
+      "warnings": []
+    }
+  }
+}

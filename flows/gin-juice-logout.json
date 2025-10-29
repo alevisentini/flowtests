@@ -4,7 +4,7 @@
     "commands": [
       {
         "description": "Wait for account button to be visible",
-        "id": "cmd_1757450947456_35_ao2x5svvl",
+        "id": "cmd_1761248598639_35_uc73eaomh",
         "target": {
           "alternatives": {
             "css": ".secondary-links li:first-child a",
@@ -13,13 +13,13 @@
           "primary": "#scanMeHeader > section.scanMeBanner > div > div > nav > ul.navigation-header-links.secondary-links > li:nth-child(1) > a",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "waitForElement",
         "value": "3000"
       },
       {
         "description": "Click account menu button",
-        "id": "cmd_1757450947456_36_4ydx38fnx",
+        "id": "cmd_1761248598639_36_ptnpvlct5",
         "target": {
           "alternatives": {
             "css": ".secondary-links li:first-child a",
@@ -29,25 +29,25 @@
           "primary": "#scanMeHeader > section.scanMeBanner > div > div > nav > ul.navigation-header-links.secondary-links > li:nth-child(1) > a",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "click",
         "value": ""
       },
       {
         "description": "Wait for dropdown menu to open",
-        "id": "cmd_1757450947456_37_sbw0q6zg4",
+        "id": "cmd_1761248598639_37_hwpx8a738",
         "target": {
           "alternatives": {},
           "primary": "",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "wait",
         "value": "1000"
       },
       {
         "description": "Wait for logout button to appear in dropdown",
-        "id": "cmd_1757450947456_38_5f2t3zwvu",
+        "id": "cmd_1761248598639_38_dkg2i9u7s",
         "target": {
           "alternatives": {
             "css": ".secondary-links > li:nth-child(1) > ul > li:nth-child(1) > a",
@@ -57,13 +57,13 @@
           "primary": "#scanMeHeader > section.scanMeBanner > div > div > nav > ul.navigation-header-links.secondary-links > li:nth-child(1) > ul > li:nth-child(1) > a",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "waitForElement",
         "value": "3000"
       },
       {
         "description": "Click the logout button",
-        "id": "cmd_1757450947456_39_zjj3qosh6",
+        "id": "cmd_1761248598639_39_uftrygqbe",
         "target": {
           "alternatives": {
             "css": ".secondary-links > li:nth-child(1) > ul > li:nth-child(1) > a",
@@ -73,13 +73,13 @@
           "primary": "#scanMeHeader > section.scanMeBanner > div > div > nav > ul.navigation-header-links.secondary-links > li:nth-child(1) > ul > li:nth-child(1) > a",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "click",
         "value": ""
       },
       {
         "description": "Verify my-account link exists (confirms logout)",
-        "id": "cmd_1757450947456_40_rdwkcdoth",
+        "id": "cmd_1761248598639_40_6nzq4e2e4",
         "target": {
           "alternatives": {
             "css": ".secondary-links a[href=\"/my-account\"]",
@@ -88,21 +88,21 @@
           "primary": "a[href=\"/my-account\"]",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "assert",
         "value": "exists"
       }
     ],
     "description": "Logout flow using the actual account menu",
     "deviceType": "desktop",
-    "id": "gin_juice_logout_1757450947459",
+    "id": "gin_juice_logout_1761248598642",
     "metadata": {
-      "createdAt": "2025-09-09T20:49:07.456Z",
+      "createdAt": "2025-10-23T19:43:18.639Z",
       "duration": 0,
       "recommendedOptions": {
         "smartWaits": true
       },
-      "updatedAt": "2025-09-09T20:49:07.456Z"
+      "updatedAt": "2025-10-23T19:43:18.639Z"
     },
     "name": "Gin & Juice - Logout",
     "project": "Examples",

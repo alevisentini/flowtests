@@ -4,31 +4,31 @@
     "commands": [
       {
         "description": "Navigate to Gin and Juice login page",
-        "id": "cmd_1757450947456_1_t6lwjm8z8",
+        "id": "cmd_1761248598639_1_cdg9tylml",
         "target": {
           "alternatives": {},
           "primary": "https://ginandjuice.shop/my-account",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "navigate",
         "value": "https://ginandjuice.shop/my-account"
       },
       {
-        "description": "Wait for username field",
-        "id": "cmd_1757450947456_2_yf03lp2j7",
+        "description": "Wait for page to load",
+        "id": "cmd_1761248598639_2_nw047tm90",
         "target": {
           "alternatives": {},
-          "primary": "input[name=\"username\"]",
+          "primary": "",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
-        "type": "waitForElement",
+        "timestamp": 1761248598639,
+        "type": "wait",
         "value": "2000"
       },
       {
         "description": "Enter username",
-        "id": "cmd_1757450947456_3_wkyaidf4w",
+        "id": "cmd_1761248598639_3_zvef2slp3",
         "target": {
           "alternatives": {
             "id": "username",
@@ -37,13 +37,13 @@
           "primary": "input[name=\"username\"]",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "type",
         "value": "{{username}}"
       },
       {
         "description": "Submit username",
-        "id": "cmd_1757450947456_4_k4csqdwzv",
+        "id": "cmd_1761248598639_4_ycr7xfk2t",
         "target": {
           "alternatives": {
             "text": "Log in",
@@ -52,25 +52,25 @@
           "primary": "button[type=\"submit\"]",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "click",
         "value": ""
       },
       {
-        "description": "Wait for password field",
-        "id": "cmd_1757450947456_5_kk02h6vz9",
+        "description": "Wait for password page",
+        "id": "cmd_1761248598639_5_4embvijyh",
         "target": {
           "alternatives": {},
-          "primary": "input[name=\"password\"]",
+          "primary": "",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
-        "type": "waitForElement",
+        "timestamp": 1761248598639,
+        "type": "wait",
         "value": "2000"
       },
       {
         "description": "Enter password",
-        "id": "cmd_1757450947456_6_g1adq4gu0",
+        "id": "cmd_1761248598639_6_0vgl67gde",
         "target": {
           "alternatives": {
             "name": "password",
@@ -79,13 +79,13 @@
           "primary": "input[name=\"password\"]",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "type",
         "value": "{{password}}"
       },
       {
         "description": "Submit password",
-        "id": "cmd_1757450947456_7_6rv2f9hsv",
+        "id": "cmd_1761248598639_7_dwpbdznwh",
         "target": {
           "alternatives": {
             "text": "Log in",
@@ -94,45 +94,45 @@
           "primary": "button[type=\"submit\"]",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "click",
         "value": ""
       },
       {
         "description": "Wait for login to complete",
-        "id": "cmd_1757450947456_8_68i8gc7vv",
+        "id": "cmd_1761248598639_8_19kiwagfr",
         "target": {
           "alternatives": {},
           "primary": "",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "waitForUrlChange",
         "value": "3000"
       },
       {
         "description": "Verify logged in successfully",
-        "id": "cmd_1757450947456_9_9j3g6r8ma",
+        "id": "cmd_1761248598639_9_2faop7ihg",
         "target": {
           "alternatives": {},
           "primary": "h1",
           "strategy": "css"
         },
-        "timestamp": 1757450947456,
+        "timestamp": 1761248598639,
         "type": "assert",
         "value": "textContains:My account"
       }
     ],
     "description": "Example login flow for Gin and Juice demo site",
     "deviceType": "desktop",
-    "id": "gin_juice_login_1757450947456",
+    "id": "gin_juice_login_1761248598639",
     "metadata": {
-      "createdAt": "2025-09-09T20:49:07.456Z",
+      "createdAt": "2025-10-23T19:43:18.639Z",
       "duration": 0,
       "recommendedOptions": {
         "smartWaits": true
       },
-      "updatedAt": "2025-09-09T20:49:07.456Z"
+      "updatedAt": "2025-10-23T19:43:18.639Z"
     },
     "name": "Gin & Juice - Login",
     "project": "Examples",

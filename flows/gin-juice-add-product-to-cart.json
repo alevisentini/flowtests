@@ -1,0 +1,189 @@
+{
+  "version": "chrome-recorder-flow@1",
+  "flow": {
+    "code": {
+      "selenium": "await driver.get('https://ginandjuice.shop/');\n\nawait driver.wait(until.elementLocated(By.css('a[href=\"/catalog/product?productId=1\"]')), 5000);\n\nawait driver.findElement(By.css('a[href=\"/catalog/product?productId=1\"]')).click();\n\nawait driver.wait(until.elementLocated(By.xpath('//button[@type=\\'submit\\'][normalize-space()=\\'Add to cart\\']')), 5000);\n\nawait driver.findElement(By.xpath('//button[@type=\\'submit\\'][normalize-space()=\\'Add to cart\\']')).click();",
+      "seleniumClean": "get(https://ginandjuice.shop/\nwait(until.elementLocated(css:a[href=/catalog/product?productId=1])), 5000\nfindElement(css:a[href=/catalog/product?productId=1])).click(\nwait(until.elementLocated(xpath://button[@type=\\submit\\][normalize-space()=\\Add to cart\\])), 5000\nfindElement(xpath://button[@type=\\submit\\][normalize-space()=\\Add to cart\\])).click("
+    },
+    "commands": [
+      {
+        "id": "cmd_1761248888277_ih23mx4yv",
+        "target": {
+          "primary": "main"
+        },
+        "timestamp": 1761248888277,
+        "type": "navigate",
+        "value": "https://ginandjuice.shop/"
+      },
+      {
+        "id": "cmd_1761248891945_qrtkwuvk3",
+        "metadata": {
+          "addedBy": "WaitInjector",
+          "attributes": {
+            "href": "/catalog/product?productId=1"
+          },
+          "beforeCommand": "click",
+          "elementInfo": {
+            "attributes": {
+              "href": "/catalog/product?productId=1"
+            },
+            "tagName": "a",
+            "text": "Pineapple Edition Cocktail $30.50 View details"
+          },
+          "originalSelector": "(//section//a[contains(@href, '/catalog/product')])[1]",
+          "reason": "ensure_element_ready",
+          "tagName": "a",
+          "text": "Pineapple Edition Cocktail $30.50 View details",
+          "timestamp": 1761248891945
+        },
+        "target": {
+          "alternatives": {
+            "css": "a[href=\"/catalog/product?productId=1\"]",
+            "href": "/catalog/product?productId=1",
+            "playwright": "getByRole('link', { name: 'Pineapple Edition Cocktail $30.50 View details' })",
+            "position": "(//section//a[contains(@href, '/catalog/product')])[1]",
+            "positionMetadata": {
+              "childPattern": "a[contains(@href, '/catalog/product')]",
+              "parentSelector": "//section",
+              "position": 1,
+              "totalSiblings": 3,
+              "type": "grid-item"
+            },
+            "text": "Pineapple Edition Cocktail $30.50 View details",
+            "xpath": "//a[normalize-space(.)='Pineapple Edition Cocktail']"
+          },
+          "primary": "a[href=\"/catalog/product?productId=1\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761248891952,
+        "type": "waitForElement",
+        "value": 5000
+      },
+      {
+        "id": "cmd_1761248891945_rmph8vfu4",
+        "metadata": {
+          "attributes": {
+            "href": "/catalog/product?productId=1"
+          },
+          "elementInfo": {
+            "attributes": {
+              "href": "/catalog/product?productId=1"
+            },
+            "tagName": "a",
+            "text": "Pineapple Edition Cocktail $30.50 View details"
+          },
+          "originalSelector": "(//section//a[contains(@href, '/catalog/product')])[1]",
+          "tagName": "a",
+          "text": "Pineapple Edition Cocktail $30.50 View details",
+          "timestamp": 1761248891945
+        },
+        "target": {
+          "alternatives": {
+            "css": "a[href=\"/catalog/product?productId=1\"]",
+            "href": "/catalog/product?productId=1",
+            "playwright": "getByRole('link', { name: 'Pineapple Edition Cocktail $30.50 View details' })",
+            "position": "(//section//a[contains(@href, '/catalog/product')])[1]",
+            "positionMetadata": {
+              "childPattern": "a[contains(@href, '/catalog/product')]",
+              "parentSelector": "//section",
+              "position": 1,
+              "totalSiblings": 3,
+              "type": "grid-item"
+            },
+            "text": "Pineapple Edition Cocktail $30.50 View details",
+            "xpath": "//a[normalize-space(.)='Pineapple Edition Cocktail']"
+          },
+          "primary": "a[href=\"/catalog/product?productId=1\"]",
+          "strategy": "css"
+        },
+        "timestamp": 1761248891961,
+        "type": "click"
+      },
+      {
+        "id": "cmd_1761248895419_8w4nrrjjn",
+        "metadata": {
+          "addedBy": "WaitInjector",
+          "attributes": {
+            "type": "submit"
+          },
+          "beforeCommand": "click",
+          "elementInfo": {
+            "attributes": {
+              "type": "submit"
+            },
+            "tagName": "button",
+            "text": "Add to cart"
+          },
+          "originalSelector": "//button[normalize-space(.)='Add to cart']",
+          "reason": "ensure_element_ready",
+          "tagName": "button",
+          "text": "Add to cart",
+          "timestamp": 1761248895418
+        },
+        "target": {
+          "alternatives": {
+            "css": "button[type=\"submit\"]",
+            "playwright": "getByRole('button', { name: 'Add to cart' })",
+            "text": "Add to cart",
+            "xpath": "//button[@type='submit'][normalize-space()='Add to cart']"
+          },
+          "primary": "//button[@type='submit'][normalize-space()='Add to cart']",
+          "strategy": "xpath"
+        },
+        "timestamp": 1761248895421,
+        "type": "waitForElement",
+        "value": 5000
+      },
+      {
+        "id": "cmd_1761248895419_4lz3cj5s6",
+        "metadata": {
+          "attributes": {
+            "type": "submit"
+          },
+          "elementInfo": {
+            "attributes": {
+              "type": "submit"
+            },
+            "tagName": "button",
+            "text": "Add to cart"
+          },
+          "originalSelector": "//button[normalize-space(.)='Add to cart']",
+          "tagName": "button",
+          "text": "Add to cart",
+          "timestamp": 1761248895418
+        },
+        "target": {
+          "alternatives": {
+            "css": "button[type=\"submit\"]",
+            "playwright": "getByRole('button', { name: 'Add to cart' })",
+            "text": "Add to cart",
+            "xpath": "//button[@type='submit'][normalize-space()='Add to cart']"
+          },
+          "primary": "//button[@type='submit'][normalize-space()='Add to cart']",
+          "strategy": "xpath"
+        },
+        "timestamp": 1761248895436,
+        "type": "click"
+      }
+    ],
+    "deviceType": "desktop",
+    "id": "flow_1761248887728_7n4uu11bk",
+    "metadata": {
+      "createdAt": "2025-10-23T19:48:07.730Z",
+      "duration": 10711,
+      "pageCount": 2,
+      "recommendedOptions": {
+        "idleQuietMs": 800,
+        "smartWaits": true
+      },
+      "updatedAt": "2025-10-23T19:48:18.441Z",
+      "url": "https://ginandjuice.shop/catalog/product?productId=1",
+      "viewport": {
+        "height": 644,
+        "width": 1382
+      }
+    },
+    "name": "Gin & Juice - Add product to cart",
+    "project": "Examples"
+  }
+}
