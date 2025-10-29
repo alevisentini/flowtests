@@ -448,7 +448,7 @@
       }
     ],
     "deviceType": "desktop",
-    "id": "flow_1761675409622_mwsnkmmt1",
+    "id": "flow_1761675409633_mwsnkmmt1",
     "metadata": {
       "createdAt": "2025-10-28T18:16:49.632Z",
       "duration": 10893,
@@ -464,6 +464,6 @@
         "width": 1382
       }
     },
-    "name": "Test SH"
+    "name": "Test GH integration"
   }
 }
